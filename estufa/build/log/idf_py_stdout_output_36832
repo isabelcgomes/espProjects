@@ -1,0 +1,5 @@
+-- Configuring incomplete, errors occurred!
+See also "D:/Espressif/projetos/estufa/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\Espressif\projetos\estufa -BD:\Espressif\projetos\estufa\build
