@@ -1,0 +1,768 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+[0m
+[0;33m0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+[0m
+[0;33m0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+[0m
+[0;33m0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+[0m
+[0;33m0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+[0m
+[0;33m0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+[0m
+[0;33m0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[1;31m--- unknown menu character Ctrl+Z --[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+[0m
+[0;33m0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+[0m
+[0;33m0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+[0m
+[0;33m0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+[0m
+[0;33m0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+[0m
+[0;33m0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+[0m
+[0;33m0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+[0m
+[0;33m0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+[0m
+[0;33m0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+[0m
+[0;33m0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+[0m
+[0;33m0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+[0m
+[0;33m0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d8c05: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3f99: esp_log_writev at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:210
+0x4008b1b1: esp_log_write at D:/Espressif/frameworks/esp-idf-v5.3.1/components/log/log.c:220
+0x400d671e: gpio_set_direction at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio/src/gpio.c:311 (discriminator 1)
+0x400d5ed9: dht_fetch_data at D:/Espressif/projetos/estufa/main/dht.c:146
+0x400d6081: dht_read_data at D:/Espressif/projetos/estufa/main/dht.c:214
+0x400d6150: dht_read_float_data at D:/Espressif/projetos/estufa/main/dht.c:249 (discriminator 8)
+0x400d5e5e: app_main at D:/Espressif/projetos/estufa/main/estufa.c:34
+0x400e37b8: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40085e01: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+[0m
+[0;33m0x4008181a: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008559d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x4008b2fd: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x40082717: lock_acquire_generic at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:133
+0x40082855: _lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:162
+0x400828ce: __retarget_lock_acquire_recursive at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/locks.c:321
+0x400d95d2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/s
