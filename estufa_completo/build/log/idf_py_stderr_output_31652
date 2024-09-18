@@ -1,0 +1,83 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a36: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894b9: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400910fd: __assert_func at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x40134dd6: tcpip_send_msg_wait_sem at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x40141619: netconn_gethostbyname_addrtype at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:1325
+0x4014554d: lwip_getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/netdb.c:345
+0x40143f5d: getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:210
+0x401442b3: tcp_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:359
+0x40144572: esp_tls_low_level_conn at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:456
+0x40144861: esp_tls_conn_new_sync at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:544
+0x4012835a: ssl_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport_ssl.c:114 (discriminator 1)
+0x4015d77d: esp_transport_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport.c:123
+0x400de29e: esp_http_client_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1455
+0x400dee7c: esp_http_client_perform at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1281
+0x400d70fd: send_telegram_message at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:63
+0x400d7238: app_main at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:102
+0x40161bc7: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089f95: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a36: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894b9: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400910fd: __assert_func at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x40134dd6: tcpip_send_msg_wait_sem at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x40141619: netconn_gethostbyname_addrtype at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:1325
+0x4014554d: lwip_getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/netdb.c:345
+0x40143f5d: getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:210
+0x401442b3: tcp_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:359
+0x40144572: esp_tls_low_level_conn at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:456
+0x40144861: esp_tls_conn_new_sync at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:544
+0x4012835a: ssl_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport_ssl.c:114 (discriminator 1)
+0x4015d77d: esp_transport_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport.c:123
+0x400de29e: esp_http_client_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1455
+0x400dee7c: esp_http_client_perform at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1281
+0x400d70fd: send_telegram_message at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:63
+0x400d7238: app_main at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:102
+0x40161bc7: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089f95: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081a36: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894b9: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x400910fd: __assert_func at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/assert.c:80
+0x40134dd6: tcpip_send_msg_wait_sem at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x40141619: netconn_gethostbyname_addrtype at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/api_lib.c:1325
+0x4014554d: lwip_getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/lwip/src/api/netdb.c:345
+0x40143f5d: getaddrinfo at D:/Espressif/frameworks/esp-idf-v5.3.1/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:210
+0x401442b3: tcp_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:359
+0x40144572: esp_tls_low_level_conn at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:456
+0x40144861: esp_tls_conn_new_sync at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls/esp_tls.c:544
+0x4012835a: ssl_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport_ssl.c:114 (discriminator 1)
+0x4015d77d: esp_transport_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport/transport.c:123
+0x400de29e: esp_http_client_connect at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1455
+0x400dee7c: esp_http_client_perform at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1281
+0x400d70fd: send_telegram_message at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:63
+0x400d7238: app_main at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:102
+0x40161bc7: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089f95: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "D:\Espressif\frameworks\esp-idf-v5.3.1\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt
