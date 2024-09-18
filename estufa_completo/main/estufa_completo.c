@@ -25,6 +25,7 @@ static const char *TAG = "telegram_bot";
 #define WIFI_PASS "lavagirl"
 #define BOT_TOKEN "7237030938:AAH7nEiM9WZIzozhfrJED417re8xceb7ipM"
 #define CHAT_ID "1195145519"
+#define CHAT_ID_2 "1195145519"
 #define UMIDADE 13
 #define LED 2
 #define LUZ 32
@@ -36,10 +37,10 @@ int i;
 float umidadeDigital, luzDigital, temperaturaDigital, temperature, humidity, nivel;
 
 
-static esp_err_t send_telegram_message(const char *message)
+static esp_err_t send_telegram_message(const char *message, const char *id_chat)
 {
     char url[256];
-    snprintf(url, sizeof(url), "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s", BOT_TOKEN, CHAT_ID, message);
+    snprintf(url, sizeof(url), "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s", BOT_TOKEN, id_chat, message);
 
     esp_http_client_config_t config = {
         .url = url,
@@ -93,7 +94,8 @@ void app_main(void)
                 nivel = gpio_get_level(NIVEL);
                 if (nivel == 0){
                     const char *message = "Lembre%20De%20Colocar%20Agua%20No%20Potinho";
-                    send_telegram_message(message);
+                    send_telegram_message(message, CHAT_ID);
+                    send_telegram_message(message, CHAT_ID_2);
                     gpio_set_level(LED, 1);
                 }
                 else{
