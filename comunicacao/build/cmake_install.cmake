@@ -1,8 +1,8 @@
-# Install script for directory: D:/Espressif/projetos/estufa
+# Install script for directory: D:/Espressif/espProjects/comunicacao
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/estufa")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/comunicacao")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Espressif/projetos/estufa/build/esp-idf/cmake_install.cmake")
+  include("D:/Espressif/espProjects/comunicacao/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Espressif/projetos/estufa/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Espressif/espProjects/comunicacao/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

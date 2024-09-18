@@ -1,8 +1,8 @@
-# Install script for directory: D:/Espressif/projetos/estufa/main
+# Install script for directory: D:/Espressif/espProjects/comunicacao/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/estufa")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/comunicacao")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,4 +1,4 @@
-/* * Data converted from D:/Espressif/projetos/estufa/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/Espressif/espProjects/comunicacao/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

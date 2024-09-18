@@ -1,0 +1,20 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400e0b7c: esp_http_client_perform at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1272
+[0m
+[0;33m0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m0x400e0b79: esp_http_client_perform at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client/esp_http_client.c:1272
+0x400d74c6: send_telegram_message at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:152
+0x400d7549: app_main at D:/Espressif/espProjects/comunicacao/main/comunicacao.c:178
+0x4016a62b: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd9: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
