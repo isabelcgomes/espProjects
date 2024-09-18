@@ -25,7 +25,7 @@ static const char *TAG = "telegram_bot";
 #define WIFI_PASS "lavagirl"
 #define BOT_TOKEN "7237030938:AAH7nEiM9WZIzozhfrJED417re8xceb7ipM"
 #define CHAT_ID "1195145519"
-#define CHAT_ID_2 "1195145519"
+#define CHAT_ID_2 "871144360"
 #define UMIDADE 13
 #define LED 2
 #define LUZ 32
