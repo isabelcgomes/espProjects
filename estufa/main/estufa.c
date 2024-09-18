@@ -45,11 +45,11 @@ void app_main(void)
 
             if (umidadeDigital == 1 && luzDigital == 0 && humidity <= 50)
             {
-                gpio_set_level(LED, 1);
+                gpio_set_level(LED, 0);
             }
             else
             {
-                gpio_set_level(LED, 0);
+                gpio_set_level(LED, 1);
             }
 
             printf("Umidade: %f \n", umidadeDigital);
