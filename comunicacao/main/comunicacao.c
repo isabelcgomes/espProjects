@@ -20,18 +20,19 @@
 #include <HTTPClient.h>
 #include <WiFiClientSecure.h>
 
-#define UMIDADE 13
-#define LED 2
-#define LUZ 32
-#define TEMPERATURA 26
-#define SENSOR_TYPE DHT_TYPE_DHT11
+WiFiClientSecure secured_client;
 
-int i;
-float umidadeDigital, luzDigital, temperaturaDigital, temperature, humidity;
+UniversalTelegramBot bot("7237030938:AAH7nEiM9WZIzozhfrJED417re8xceb7ipM", secured_client)
 
-void app_main(void)
+bool flag=false;
+
+void setup(void)
 {
     wifi_init();
     ESP_ERROR_CHECK(wifi_connect_sta("Francivaldo", "16172021", 10000));
 
+    secure_client.setCACert(TELEGRAM_CERTIFICATE_ROOT)
+
+    bot.sendMessage(1195145519, "Lembre de encher o potinho de água :)", "")
+;
 }
